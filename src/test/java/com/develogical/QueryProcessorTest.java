@@ -27,6 +27,6 @@ public class QueryProcessorTest {
     
     @Test
     public void knowsAboutFayeraband() throws Exception {
-        assertThat(queryProcessor.process("against method"), containsString("anarchy"));
+        assertThat(queryProcessor.process("against method"), containsString("delibarate test failure"));
     }
 }
