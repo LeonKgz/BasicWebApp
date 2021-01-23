@@ -26,7 +26,7 @@ public class QueryProcessorTest {
     }
     
     @Test
-    public void isNotCaseSensitive() throws Exception {
+    public void knowsAboutFayeraband() throws Exception {
         assertThat(queryProcessor.process("against method"), containsString("anarchy"));
     }
 }
