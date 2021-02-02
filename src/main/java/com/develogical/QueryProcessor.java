@@ -14,6 +14,9 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("what is your name")) {
                     return "Amor Fati";
         }
+        if (query.toLowerCase().contains("Theresa May")) {
+                    return "2016";
+        }
         if (query.toLowerCase().contains("both a square and a cube")) {
                     String[] arr = query.split(", ");
                     arr[0] = arr[0].split(": ")[1];
