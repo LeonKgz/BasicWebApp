@@ -14,6 +14,18 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("what is your name")) {
                     return "Amor Fati";
         }
+        if (query.toLowerCase().contains("both a square and a cube")) {
+                    String[] arr = query.split(", ");
+                    arr[0] = arr[0].split(": ")[1];
+                    for String a in arr:
+                      Integer curr = Integer.parseInt(a);
+                      double sq = Math.sqrt(curr);
+                      int cb = (int) Math.round(Math.pow(curr, 1.0/3.0));
+                      if ((sq - Math.floor(sq)) == 0 && (curr == cb * cb * cb)) {
+                        return curr.toString();
+                      }
+                    return arr[0];  
+        }
         if (query.toLowerCase().contains("multiplied")) {
                     String[] arr = query.split(" ");
                     String first = arr[arr.length-4];
