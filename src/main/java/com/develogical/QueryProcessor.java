@@ -14,6 +14,15 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("what is your name")) {
                     return "Amor Fati";
         }
+        if (query.toLowerCase().contains("plus")) {
+                    String[] arr = query.split(" ");
+                    String first = arr[arr.length-3];
+                    Integer one = Integer.parseInt(first);
+                    String second = arr[arr.length-1];
+                    Integer two = Integer.parseInt(second);
+                    two += one;
+                    return two.toString(); 
+        }
         if (query.toLowerCase().contains("which of the following numbers is the largest")) {
                     String[] arr = query.split(" ");
                     String first = arr[arr.length-2];
