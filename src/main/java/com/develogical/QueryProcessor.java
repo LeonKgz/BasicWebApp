@@ -32,7 +32,7 @@ public class QueryProcessor {
 				//			flag = true;
 					//		break;
 					//	}
-					}
+					//}
         }
         if (query.toLowerCase().contains("both a square and a cube")) {
                     String[] arr = query.split(": ");
@@ -65,7 +65,6 @@ public class QueryProcessor {
                     one -= two;
                     return one.toString(); 
         }
-
         if (query.toLowerCase().contains("plus")) {
                     String[] arr = query.split(" ");
                     String first = arr[arr.length-3];
