@@ -17,7 +17,7 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("both a square and a cube")) {
                     String[] arr = query.split(", ");
                     arr[0] = arr[0].split(": ")[1];
-                    for (String a in arr):
+                    for (String a: arr):
                       Integer curr = Integer.parseInt(a);
                       double sq = Math.sqrt(curr);
                       int cb = (int) Math.round(Math.pow(curr, 1.0/3.0));
