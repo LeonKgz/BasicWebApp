@@ -27,7 +27,7 @@ public class QueryProcessor {
                     String[] arr = query.split(" to the power of ");
                     Integer one = Integer.parseInt(arr[0].split("what is ")[1]);
                     Integer two = Integer.parseInt(arr[1]);
-                    Doulbe onet = (Double) Math.pow((double) one, (double) two);
+                    Double onet = (Double) Math.pow((double) one, (double) two);
                     return onet.toString();
         }
         if (query.toLowerCase().contains("both a square and a cube")) {
