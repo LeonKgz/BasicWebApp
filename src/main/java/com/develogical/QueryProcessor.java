@@ -22,7 +22,7 @@ public class QueryProcessor {
         }
         if (query.toLowerCase().contains("both a square and a cube")) {
                     String[] arr = query.split(": ");
-                    arr = arr[1].split(", ");
+                    arr = arr[2].split(", ");
                     for (String a : arr){
                       Integer curr = Integer.parseInt(a);
                       double sq = Math.sqrt(curr);
