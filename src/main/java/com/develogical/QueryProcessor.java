@@ -17,15 +17,14 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("which of the following numbers is the largest")) {
                     String[] arr = query.split(" ");
                     String first = arr[arr.length-2];
-                    int one = Integer.parseInt(first.substring(0, first.length() - 1));
-                    String second = arr[arr.length-1]
-                    int two = Integer.parseInt(second);
+                    Integer one = Integer.parseInt(first.substring(0, first.length() - 1));
+                    String second = arr[arr.length-1];
+                    Integer two = Integer.parseInt(second);
                     if (one > two) {
                       return one.toString();
                     } else {
                       return two.toString();
                     }
-                    return "";
         }
         return "";
     }
