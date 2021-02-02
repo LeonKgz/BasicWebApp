@@ -56,6 +56,16 @@ public class QueryProcessor {
                     two *= one;
                     return two.toString(); 
         }
+        if (query.toLowerCase().contains("minus")) {
+                    String[] arr = query.split(" ");
+                    String first = arr[arr.length-3];
+                    Integer one = Integer.parseInt(first);
+                    String second = arr[arr.length-1];
+                    Integer two = Integer.parseInt(second);
+                    one -= two;
+                    return one.toString(); 
+        }
+
         if (query.toLowerCase().contains("plus")) {
                     String[] arr = query.split(" ");
                     String first = arr[arr.length-3];
