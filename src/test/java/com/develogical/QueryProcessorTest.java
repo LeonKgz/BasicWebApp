@@ -29,4 +29,8 @@ public class QueryProcessorTest {
     public void knowsAboutFayeraband() throws Exception {
         assertThat(queryProcessor.process("against method"), containsString("anarchy"));
     }
+    @Test
+    public void knowsMyName() throws Exception {
+        assertThat(queryProcessor.process("what is your name"), containsString("Amor Fati"));
+    }
 }

@@ -11,6 +11,9 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("against method")) {
             return "A 1975 book about the philosophy of science by Paul Feyerabend, in which the author argues that science is an anarchic enterprise, not a nomic (customary) one.[1] In the context of this work, the term anarchy refers to epistemological anarchy.";
         }
+        if (query.toLowerCase().contains("what is your name")) {
+                    return "Amor Fati";
+        }
         return "";
     }
 }
