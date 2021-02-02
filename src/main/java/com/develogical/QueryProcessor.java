@@ -26,12 +26,12 @@ public class QueryProcessor {
 
         if (query.toLowerCase().contains("prime")) {
           String[] arr = query.split(": ");
-					for (int i = 2; i <= num / 2; ++i) {
+					//for (int i = 2; i <= num / 2; ++i) {
 						// condition for nonprime number
-						if (num % i == 0) {
-							flag = true;
-							break;
-						}
+					//	if (num % i == 0) {
+				//			flag = true;
+					//		break;
+					//	}
 					}
         }
         if (query.toLowerCase().contains("both a square and a cube")) {
