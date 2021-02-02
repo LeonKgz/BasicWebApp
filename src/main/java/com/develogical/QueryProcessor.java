@@ -18,8 +18,8 @@ public class QueryProcessor {
                     return "2016";
         }
         if (query.toLowerCase().contains("both a square and a cube")) {
-                    String[] arr = query.split(": ")
-                    arr = arr[1].split(", ")
+                    String[] arr = query.split(": ");
+                    arr = arr[1].split(", ");
                     for (String a : arr){
                       Integer curr = Integer.parseInt(a);
                       double sq = Math.sqrt(curr);
