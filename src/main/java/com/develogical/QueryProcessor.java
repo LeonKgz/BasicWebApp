@@ -23,16 +23,12 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("Dr No")) {
                     return "Sean Connery";
         }
-
-        if (query.toLowerCase().contains("prime")) {
-          String[] arr = query.split(": ");
-					//for (int i = 2; i <= num / 2; ++i) {
-						// condition for nonprime number
-					//	if (num % i == 0) {
-				//			flag = true;
-					//		break;
-					//	}
-					//}
+        if (query.toLowerCase().contains("to the power of")) {
+                    String[] arr = query.split(" to the power of ");
+                    Integer one = Integer.parseInt(arr[0].split("what is ")[1]);
+                    Integer two = Integer.parseInt(arr[1]);
+                    one = Math.pow(one, two);
+                    return one.toString();
         }
         if (query.toLowerCase().contains("both a square and a cube")) {
                     String[] arr = query.split(": ");
